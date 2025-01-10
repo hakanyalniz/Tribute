@@ -11,9 +11,12 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6; /* Spacing between lines */
-  color: #000000;
+  color: white;
+  background-color: black;
 
   padding: 20px; /* Padding around the page */
+  margin-top: 40px;
+  margin-bottom: 40px;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,6 +28,7 @@ body {
 /* Basic container for layout */
 .container {
   max-width: 900px;
+
   margin: 2rem auto 0 auto; /* Center it horizontally */
 }
 
@@ -51,9 +55,12 @@ a:hover {
   color: #0056b3; /* Darker blue on hover */
 }
 
-#title,
-#small-exp {
+header {
   text-align: center;
+}
+
+#title {
+  font-size: 50px;
 }
 
 #img-caption {
@@ -66,4 +73,38 @@ a:hover {
   height: auto;
   max-width: 100%;
   min-width: 300px;
+}
+
+.semicolon-container {
+  position: relative;
+}
+
+.semicolon {
+  position: fixed;
+  font-size: 100px; /* Adjust size as needed */
+  font-weight: bold;
+  color: #ffffff;
+  top: 85%; /* Center vertically */
+  left: 95%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  animation: fade-in-out 1s infinite;
+
+  user-select: none; /* Prevent text selection */
+  -webkit-user-select: none; /* For WebKit-based browsers (Chrome, Safari) */
+  -moz-user-select: none; /* For Firefox */
+  -ms-user-select: none; /* For older Microsoft browsers */
+}
+
+@keyframes fade-in-out {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+footer {
+  text-align: center;
 }
