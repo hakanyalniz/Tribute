@@ -24,7 +24,7 @@ body {
 
 /* Basic container for layout */
 .container {
-  max-width: 720px;
+  max-width: 900px;
   margin: 2rem auto 0 auto; /* Center it horizontally */
 }
 
@@ -49,4 +49,21 @@ a {
 
 a:hover {
   color: #0056b3; /* Darker blue on hover */
+}
+
+#title,
+#small-exp {
+  text-align: center;
+}
+
+#img-caption {
+  text-align: center;
+}
+
+#image {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  max-width: 100%;
+  min-width: 300px;
 }
